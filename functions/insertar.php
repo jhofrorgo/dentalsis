@@ -1,5 +1,5 @@
 <?php
-include("conexion.php");
+include("../config/conexion.php");
 $con=conectar();
 
 $tipodocumento=$_POST['tipodocumento'];
@@ -16,7 +16,7 @@ $sql="INSERT INTO alumno VALUES(NULL,'$tipodocumento','$documento','$nombres','$
 $query= mysqli_query($con,$sql);
 
 if($query){
-    Header("Location: alumno.php");
+    Header("Location: ../alumno.php");
     
 }else {
 }

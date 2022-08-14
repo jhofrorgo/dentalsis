@@ -1,5 +1,5 @@
 <?php 
-    include("conexion.php");
+    include("config/conexion.php");
     $con=conectar();
 
 $id=$_GET['id'];
@@ -23,7 +23,7 @@ $row=mysqli_fetch_array($query);
     </head>
     <body>
                 <div class="container mt-5">
-                    <form action="update.php" method="POST">
+                    <form action="functions/update.php" method="POST">
                     
                                 <input type="hidden" name="id" value="<?php echo $row['id']  ?>">
                                 

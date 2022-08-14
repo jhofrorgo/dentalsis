@@ -1,5 +1,5 @@
 <?php 
-    include("conexion.php");
+    include("config/conexion.php");
     $con=conectar();
 
     $sql="SELECT *  FROM alumno";
@@ -37,7 +37,7 @@
                         
                         <div class="col-md-3">
                             <center><h1>Nuevo Alumno</h1></center>
-                                <form action="insertar.php" method="POST">
+                                <form action="functions/insertar.php" method="POST">
 
                                     <input type="text" class="form-control mb-3" name="tipodocumento" placeholder="Tipo documento" required>
                                     <input type="text" class="form-control mb-3" name="documento" placeholder="Documento de identidad" required>
@@ -80,7 +80,7 @@
                                                 <th><?php  echo $row['acudiente']?></th>
                                                 <th><?php  echo $row['telacu']?></th>
                                                 <th><a href="actualizar.php?id=<?php echo $row['id'] ?>" class="btn btn-info">Editar</a></th>
-                                                <th><a href="delete.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">Eliminar</a></th>                                        
+                                                <th><a href="functions/delete.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">Eliminar</a></th>                                        
                                             </tr>
                                         <?php 
                                             }

@@ -1,6 +1,6 @@
 <?php
 
-include("conexion.php");
+include("../config/conexion.php");
 $con=conectar();
 
 $id=$_POST['id'];
@@ -17,6 +17,6 @@ $sql="UPDATE alumno SET  tipodocumento='$tipodocumento',documento='$documento',n
 $query=mysqli_query($con,$sql);
 
     if($query){
-        Header("Location: alumno.php");
+        Header("Location: ../alumno.php");
     }
 ?>
