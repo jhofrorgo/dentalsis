@@ -19,9 +19,10 @@ $row=mysqli_fetch_array($query);
         <link href="css/style.css" rel="stylesheet">
         <title>Actualizar</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        
+        <link rel="shorcut icon" type="image/jpg" href="img/favicon.png">
     </head>
     <body>
+        <?php include('views/menu.php')?>
                 <div class="container mt-5">
                     <form action="functions/update.php" method="POST">
                     

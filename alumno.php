@@ -13,25 +13,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        
+        <link rel="shorcut icon" type="image/jpg" href="img/favicon.png">
     </head>
     <body>
-    <nav class= "navbar navbar-expand navbar-dark  bg-dark mb-5">
-        <ul class ='navbar-nav'>
-            <li class="nav-item">
-                <a class = "nav-link" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class = "nav-link" href="#">Alumnos</a>
-            </li>
-            <li class="nav-item">
-                <a class = "nav-link" href="#">Materias</a>
-            </li>
-            <li class="nav-item">
-                <a class = "nav-link" href="#">Clases</a>
-            </li>
-        </ul>
-    </nav>
+    <?php include("views/menu.php");?>
             <div class="container mt-5">
                     <div class="row"> 
                         
@@ -44,7 +29,7 @@
                                     <input type="text" class="form-control mb-3" name="nombres" placeholder="Nombres" required>
                                     <input type="text" class="form-control mb-3" name="apellidos" placeholder="Apellidos" required>
                                     <input type="date" class="form-control mb-3" name="fechanacimiento" placeholder="Fecha de nacimiento" required>
-                                    <input type="text" class="form-control mb-3" name="grado" placeholder="Grado" required>
+                                    <input type="text" class="form-control mb-3" name="grado" placeholder="Curso" required>
                                     <input type="text" class="form-control mb-3" name="acudiente" placeholder="Acudiente" required>
                                     <input type="text" class="form-control mb-3" name="telacu" placeholder="Teléfono acudiente" required>
                                     
@@ -59,7 +44,7 @@
                                         <th>Documento</th>
                                         <th>Nombres</th>
                                         <th>Apellidos</th>
-                                        <th>Grado</th>
+                                        <th>Curso</th>
                                         <th>Nombre Acudiente</th>
                                         <th>Teléfono</th>
                                         <th>Acciones</th>
@@ -90,5 +75,6 @@
                         </div>
                     </div>  
             </div>
+            <?php include("views/footer.php"); ?>
     </body>
 </html>
